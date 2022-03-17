@@ -1,23 +1,42 @@
-* {
+body {
     font-family: "Heeboo", sans-serif;
 }
 
-nav ul {
+/* Header */
+header {
+  height: 600px;
+  background-color: #e6e6ff;
+}
+
+/* Navigation Bar */
+.flex-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+div > p {
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #c4c4d4;
-  border-bottom: #333;
   position: sticky;
   top: 0;
 }
 
-nav li {
+.nav-bar > li {
   float: left;
 }
 
-nav li a {
+.nav-bar > li > a {
   display: block;
   color: black;
   text-align: center;
@@ -25,7 +44,7 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover, footer a:hover {
+.nav-bar > li > a:hover {
   background-color: #b3b3e6;
 }
 
@@ -33,43 +52,33 @@ nav li a:hover, footer a:hover {
   background-color: #b3b3e6;
 }
 
+/* Cards */
+section {
+  margin: auto;
+  padding: 25px;
+  margin: 200px;
+  background-color: #e6e6ff;
+}
+
 h1 {
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 300;
 }
 
-
-section {
-    background-color: #e6e6ff;
-    margin: auto;
-    padding: 25px;
-    margin: 200px;
-}
-
+/* Footer */
 footer {
-    height: 50px;
-    margin: 40px;
-    padding: 6px;
-    overflow: hidden;
-    background-color: #c4c4d4;
-    bottom: 0;
-}
- /* Arreglar */
-footer a {
-    color: black;
-    float: left;
-    padding: 16px;
-    text-decoration: none;
+  bottom: 0;
+  background-color: #c4c4d4;
 }
 
-footer p {
-    margin-right: 50px;
-    overflow: auto;
-    color: black;
-    float: right;
+footer > p {
+  color: black;
+  font-size: 1em;
+  padding: 14px;
+  text-align: right;
 }
